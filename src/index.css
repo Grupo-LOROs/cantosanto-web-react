@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ajustes de tipografía para acercarnos al diseño */
+.cs-heading {
+  @apply font-serif uppercase tracking-caps;
+}
+
+.cs-pill {
+  @apply inline-flex items-center rounded-full border px-4 py-2 text-xs font-medium transition;
+}
+
+.cs-section {
+  @apply bg-cs-beige;
+}
