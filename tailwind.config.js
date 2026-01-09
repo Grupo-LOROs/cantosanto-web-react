@@ -7,23 +7,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Palette aproximada del diseño (puedes ajustar con los valores exactos del Figma)
+        // Paleta del diseño (según especificación del equipo)
         cs: {
-          beige: "#E8DDCF",
-          beige2: "#F0E6DA",
-          terracotta: "#B14A1F",
-          terracotta2: "#9C3E18",
-          brown: "#3A2419",
-          brown2: "#2A1A12",
+          // Fondos
+          beige: "#E4D7C6",
+          dark: "#1B0B09",
+          brown: "#3E1E11",
+
+          // Acentos / tipografía
+          accent: "#B54A17",
+
+          // Utilidades
           white: "#FFFFFF",
         },
       },
       fontFamily: {
-        serif: ["Cormorant Garamond", "serif"],
-        sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        cinzel: ["Cinzel", "serif"],
+        raleway: ["Raleway", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        inter: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        // Defaults
+        serif: ["Cinzel", "serif"],
+        sans: ["Raleway", "Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
       },
       letterSpacing: {
         caps: "0.08em",
+        capsWide: "0.12em",
       },
       boxShadow: {
         soft: "0 10px 30px rgba(0,0,0,0.18)",
