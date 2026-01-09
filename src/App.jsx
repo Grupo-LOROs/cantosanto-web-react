@@ -300,7 +300,7 @@ function LegalSection() {
         <div className="border-y-[6px] border-cs-accent py-10 md:py-14">
           <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
             <div>
-              <h3 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-[#B54A17] sm:text-4xl mx-auto max-w-6xl text-center font-cinzel text-3xl font-semibold uppercase tracking-caps text-cs-brown sm:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
+              <h3 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-[#B54A17] sm:text-4xl mx-auto max-w-6xl text-center">
                 La legalidad no es una
                 <br />
                 promesa, es un hecho:
