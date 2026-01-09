@@ -12,7 +12,7 @@ function Logo() {
     <img
       src="/icons/logo-white.svg"
       alt="Cantosanto Residenciales"
-      className="h-16 w-auto max-w-[260px] sm:h-20 sm:max-w-[300px] md:h-24 md:max-w-[360px] lg:h-28"
+      className="h-28 w-auto shrink-0 sm:h-32 md:h-40 lg:h-48 xl:h-56 max-w-[60vw]"
       draggable="false"
     />
   );
@@ -23,7 +23,7 @@ function Hero() {
   return (
     <header className="relative min-h-[92vh] w-full overflow-hidden">
       <img
-        src="/images/hero.png"
+        src="/images/hero.webp"
         alt="Bosque"
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -64,11 +64,12 @@ function Hero() {
 
         <div className="flex flex-1 items-center justify-center pb-16 pt-10 md:pb-24">
           <h1 className="text-center font-cinzel text-4xl font-medium uppercase tracking-caps text-white md:text-6xl lg:text-7xl">
-            UN LUGAR DONDE LA TRANQUILIDAD,
+            <span className="font-medium text-white/90">UN LUGAR DONDE </span>
+            <span className="font-bold">LA TRANQUILIDAD,</span>
             <br />
-            LA NATURALEZA Y EL DESCANSO
+            <span className="font-bold">LA NATURALEZA Y EL DESCANSO</span>
             <br />
-            <span className="text-white/90">SE ENCUENTRAN.</span>
+            <span className="font-medium text-white/90">SE ENCUENTRAN.</span>
           </h1>
         </div>
       </Container>
@@ -81,7 +82,7 @@ function Intro() {
     <section id="informacion" className="bg-cs-beige py-16 md:py-24">
       <Container>
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-cs-accent sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-cs-accent sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
             Terrenos en el Bosque de Pátzcuaro
           </h2>
           <p className="mx-auto mt-8 max-w-4xl font-raleway text-xl leading-relaxed text-cs-brown/80 md:text-2xl">
@@ -125,7 +126,7 @@ function SplitStory() {
 
           <div className="relative md:col-span-3">
             <img
-              src="/images/house.png"
+              src="/images/house.webp"
               alt="Cabaña en el bosque"
               className="h-full w-full object-cover"
             />
@@ -160,7 +161,7 @@ function Features() {
     <section className="bg-cs-beige py-16 md:py-24">
       <Container>
         <div className="text-center">
-          <h2 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-cs-accent sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-cs-accent sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
             Terrenos listos para construir
           </h2>
           <p className="mx-auto mt-4 max-w-4xl font-raleway text-xl text-cs-brown/80 md:text-2xl">
@@ -196,13 +197,13 @@ function ImageCallout() {
       <div className="mx-auto w-full max-w-7xl px-0">
         <div className="relative">
           <img
-            src="/images/interior.png"
+            src="/images/interior.webp"
             alt="Interior con vista al bosque"
             className="h-[520px] w-full object-cover md:h-[680px]"
           />
 
           <div className="absolute bottom-8 left-8 max-w-[420px] border border-white/70 bg-cs-dark/35 p-6 backdrop-blur-sm md:bottom-10 md:left-10 md:p-7">
-            <p className="font-cinzel text-2xl uppercase tracking-caps text-cs-beige md:text-3xl">
+            <p className="font-cinzel text-sm uppercase tracking-caps leading-snug text-[#E4D7C6] sm:text-base md:text-lg">
               Terrenos con
               <br />
               potencial personal o con
@@ -220,7 +221,7 @@ function Gallery() {
   return (
     <section className="bg-cs-beige py-16 md:py-24">
       <Container>
-        <h2 className="text-center font-cinzel text-3xl font-semibold uppercase tracking-caps text-cs-brown md:text-5xl">
+        <h2 className="mx-auto max-w-6xl text-center font-cinzel text-3xl font-semibold uppercase tracking-caps text-cs-brown sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
           Crea un lugar al que siempre quieras volver,
           <br />
           y que otros también.
@@ -228,14 +229,14 @@ function Gallery() {
 
         <div className="mt-10">
           <img
-            src="/images/aerial.png"
+            src="/images/aerial.webp"
             alt="Vista aérea"
             className="h-[360px] w-full object-cover md:h-[520px]"
           />
         </div>
 
         <div className="mt-4 grid gap-4 md:mt-6 md:grid-cols-3">
-          {["/images/small-1.png", "/images/small-2.png", "/images/small-3.png"].map(
+          {["/images/small-1.webp", "/images/small-2.webp", "/images/small-3.webp"].map(
             (src) => (
               <img
                 key={src}
@@ -258,14 +259,14 @@ function MapSection() {
         <div className="grid md:grid-cols-2">
           <div className="relative">
             <img
-              src="/images/map.png"
+              src="/images/map.webp"
               alt="Mapa"
               className="h-full min-h-[340px] w-full object-cover md:min-h-[520px]"
             />
           </div>
 
           <div className="bg-cs-brown px-8 py-12 md:px-14 md:py-16">
-            <h3 className="text-center font-cinzel text-4xl font-semibold uppercase tracking-caps text-cs-beige md:text-5xl">
+            <h3 className="text-center font-cinzel text-4xl font-semibold uppercase tracking-caps text-[#E4D7C6] md:text-5xl">
               Ubicación
               <br />
               estratégica
@@ -299,7 +300,7 @@ function LegalSection() {
         <div className="border-y-[6px] border-cs-accent py-10 md:py-14">
           <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
             <div>
-              <h3 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-cs-accent sm:text-4xl md:text-4xl lg:text-5xl">
+              <h3 className="font-cinzel text-3xl font-semibold uppercase leading-tight tracking-caps text-[#B54A17] sm:text-4xl mx-auto max-w-6xl text-center font-cinzel text-3xl font-semibold uppercase tracking-caps text-cs-brown sm:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
                 La legalidad no es una
                 <br />
                 promesa, es un hecho:
@@ -317,7 +318,7 @@ function LegalSection() {
 
             <div className="flex justify-center md:justify-end">
               <img
-                src="/images/gavel.png"
+                src="/images/gavel.webp"
                 alt="Legalidad"
                 className="h-[260px] w-full max-w-[520px] object-contain md:h-[360px]"
               />
