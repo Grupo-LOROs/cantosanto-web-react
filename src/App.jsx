@@ -4,7 +4,7 @@ import FeatureIcon from "./components/FeatureIcon";
 
 const NAV = [
   { label: "Terrenos disponibles", href: "#terrenos" },
-  { label: "Información", href: "#informacion" },
+  { label: "Información", href: "#contacto" },
 ];
 
 function Logo() {
@@ -12,7 +12,7 @@ function Logo() {
     <img
       src="/icons/logo-white.svg"
       alt="Cantosanto Residenciales"
-      className="h-28 w-auto shrink-0 sm:h-32 md:h-40 lg:h-48 xl:h-56 max-w-[60vw]"
+      className="h-28 w-auto shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36 max-w-[60vw]"
       draggable="false"
     />
   );
@@ -330,13 +330,188 @@ function LegalSection() {
   );
 }
 
+
+function ContactSection() {
+  return (
+    <section id="contacto" className="bg-cs-beige py-16 md:py-24">
+      <Container>
+        <div className="mx-auto max-w-5xl rounded-3xl border border-cs-brown/15 bg-white/25 p-6 backdrop-blur md:p-10">
+          <h2 className="text-center font-cinzel text-3xl font-semibold uppercase tracking-caps text-cs-accent sm:text-4xl md:text-4xl lg:text-5xl">
+            Agenda una llamada
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-3xl text-center font-raleway text-lg leading-relaxed text-cs-brown/80 md:text-xl">
+            Déjanos tus datos y un asesor se pondrá en contacto contigo.
+          </p>
+
+          {/* 
+            CONFIGURA TU ENDPOINT:
+            - Recomendado (sin backend): Formspree / Getform / Basin.
+            - Reemplaza el action por el URL que te den.
+          */}
+          <form
+            className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-4 md:grid-cols-2"
+            action="https://formspree.io/f/xaqqyjjp"
+            method="POST"
+          >
+            <div>
+              <label className="mb-1 block font-inter text-sm font-semibold text-cs-brown">
+                Nombre
+              </label>
+              <input
+                name="nombre"
+                required
+                className="w-full rounded-xl border border-cs-brown/20 bg-white/70 px-4 py-3 font-inter text-cs-dark outline-none focus:border-cs-accent"
+                placeholder="Tu nombre"
+              />
+            </div>
+
+            <div>
+              <label className="mb-1 block font-inter text-sm font-semibold text-cs-brown">
+                Teléfono
+              </label>
+              <input
+                name="telefono"
+                className="w-full rounded-xl border border-cs-brown/20 bg-white/70 px-4 py-3 font-inter text-cs-dark outline-none focus:border-cs-accent"
+                placeholder="Ej. 55 1234 5678"
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <label className="mb-1 block font-inter text-sm font-semibold text-cs-brown">
+                Correo
+              </label>
+              <input
+                type="email"
+                name="email"
+                required
+                className="w-full rounded-xl border border-cs-brown/20 bg-white/70 px-4 py-3 font-inter text-cs-dark outline-none focus:border-cs-accent"
+                placeholder="tucorreo@ejemplo.com"
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <label className="mb-1 block font-inter text-sm font-semibold text-cs-brown">
+                Mensaje (opcional)
+              </label>
+              <textarea
+                name="mensaje"
+                rows={4}
+                className="w-full resize-none rounded-xl border border-cs-brown/20 bg-white/70 px-4 py-3 font-inter text-cs-dark outline-none focus:border-cs-accent"
+                placeholder="Cuéntanos qué estás buscando…"
+              />
+            </div>
+
+            {/* Honeypot anti-spam */}
+            <input type="text" name="_gotcha" className="hidden" />
+
+            <div className="md:col-span-2 mt-2 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+              <label className="flex items-center gap-2 font-inter text-sm text-cs-brown">
+                <input
+                  required
+                  type="checkbox"
+                  className="h-4 w-4 accent-cs-accent"
+                />
+                Acepto el aviso de privacidad
+              </label>
+
+              <button
+                type="submit"
+                className="w-full rounded-xl bg-cs-accent px-7 py-3 font-inter text-base font-semibold text-white transition hover:opacity-95 md:w-auto"
+              >
+                Enviar datos
+              </button>
+            </div>
+          </form>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="relative overflow-hidden bg-cs-dark">
       <div className="absolute inset-0 bg-gradient-to-b from-cs-dark via-black/60 to-cs-dark" />
-      <div className="relative h-48 md:h-64">
-        <div className="absolute bottom-10 left-0 right-0 h-px bg-cs-beige/70" />
-      </div>
+
+      <Container className="relative z-10 py-12">
+        <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-center">
+          <div className="flex items-center gap-5">
+            <img
+              src="/icons/logo-white.svg"
+              alt="Cantosanto"
+              className="h-14 w-auto"
+              draggable="false"
+            />
+            <div className="text-sm text-cs-beige/80">
+              <div className="font-inter text-base font-semibold text-cs-beige">
+                Cantosanto
+              </div>
+              <div className="font-raleway">Terrenos en el bosque de Pátzcuaro</div>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3">
+            {/* Reemplaza los href por tus URLs reales */}
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/15 bg-white/5 p-3 text-cs-beige/90 backdrop-blur transition hover:bg-white/10"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <path d="M16 11.37a4 4 0 1 1-7.87 1.26 4 4 0 0 1 7.87-1.26Z" />
+                <path d="M17.5 6.5h.01" />
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/15 bg-white/5 p-3 text-cs-beige/90 backdrop-blur transition hover:bg-white/10"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+                <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.2c-1.2 0-1.6.7-1.6 1.5v1.8H16l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/>
+              </svg>
+            </a>
+            <a
+              href="https://tiktok.com/@cantosantomx"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/15 bg-white/5 p-3 text-cs-beige/90 backdrop-blur transition hover:bg-white/10"
+              aria-label="TikTok"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+                <path d="M16.7 5.2c.8 1.1 1.9 1.9 3.3 2.1v3.1c-1.4-.1-2.7-.5-3.9-1.3v6.5c0 3.2-2.6 5.8-5.8 5.8S4.5 18.8 4.5 15.6s2.6-5.8 5.8-5.8c.3 0 .6 0 .9.1v3.3c-.3-.1-.6-.2-.9-.2-1.4 0-2.6 1.2-2.6 2.6s1.2 2.6 2.6 2.6 2.6-1.2 2.6-2.6V2.9h3.4c.1.8.3 1.6.8 2.3Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-10 border-t border-white/10 pt-6">
+          <p className="max-w-5xl font-raleway text-xs leading-relaxed text-cs-beige/70">
+            La información mostrada es de carácter informativo y puede cambiar sin previo
+            aviso. Imágenes ilustrativas. Consulta términos, condiciones y documentación
+            legal con un asesor.
+          </p>
+
+          <div className="mt-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <a
+              href="/aviso-de-privacidad"
+              className="font-inter text-xs text-cs-beige/70 underline decoration-white/30 underline-offset-4 hover:text-cs-beige"
+            >
+              Aviso de privacidad
+            </a>
+
+            <div className="font-inter text-xs text-cs-beige/70">
+              © {new Date().getFullYear()} Cantosanto. Todos los derechos reservados.
+            </div>
+          </div>
+        </div>
+      </Container>
     </footer>
   );
 }
@@ -352,6 +527,7 @@ export default function App() {
       <Gallery />
       <MapSection />
       <LegalSection />
+      <ContactSection />
       <Footer />
     </div>
   );
