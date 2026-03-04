@@ -7,34 +7,26 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Paleta del diseño (según especificación del equipo)
         cs: {
-          // Fondos
-          beige: "#E4D7C6",
-          dark: "#1B0B09",
-          brown: "#3E1E11",
-
-          // Acentos / tipografía
-          accent: "#B54A17",
-
-          // Utilidades
-          white: "#FFFFFF",
-        },
+          // BASE: Gama Forestal Profunda
+          dark: "#0F2620",      // Verde Noche (Fondos oscuros y textos principales)
+          primary: "#1E453E",   // Verde Bosque (Botones, secciones fuertes)
+          secondary: "#4C7065", // Verde Musgo (Iconos y detalles)
+          
+          // ACENTOS: Sustituimos el café por un Verde Jade/Salvia
+          accent: "#7D9C88",    // ANTES: Café (#A67B5B) -> AHORA: Verde Salvia
+          
+          // NEUTROS: Piedra y Arena
+          beige: "#F2F0E9",     // Blanco Hueso (Fondos claros)
+          surface: "#E6E4DD",   // Beige Piedra (Tarjetas)
+        }
       },
       fontFamily: {
-        cinzel: ["Cinzel", "serif"],
-        raleway: ["Raleway", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
-        inter: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
-        // Defaults
-        serif: ["Cinzel", "serif"],
-        sans: ["Raleway", "Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Merriweather', 'serif'], 
       },
-      letterSpacing: {
-        caps: "0.08em",
-        capsWide: "0.12em",
-      },
-      boxShadow: {
-        soft: "0 10px 30px rgba(0,0,0,0.18)",
+      animation: {
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       }
     },
   },

@@ -12,7 +12,8 @@ html {
 
 /* Ajustes de tipografía para acercarnos al diseño */
 .cs-heading {
-  @apply font-serif uppercase tracking-caps;
+  /* Cambiamos 'tracking-caps' por 'tracking-widest' que sí existe por defecto */
+  @apply font-serif uppercase tracking-widest; 
 }
 
 .cs-pill {
@@ -20,5 +21,6 @@ html {
 }
 
 .cs-section {
+  /* Asegúrate de haber actualizado tu tailwind.config.js para que exista cs-beige */
   @apply bg-cs-beige;
 }
