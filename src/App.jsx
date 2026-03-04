@@ -71,7 +71,7 @@ function App() {
 
             {/* Botón Agendar Visita (Estilo Dark para contrastar con el beige) */}
             <a href="#contacto" className="hidden md:block bg-cs-dark text-white border border-transparent px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-cs-accent transition-all shadow-lg">
-              Agendar Visita
+              Solicitar Información
             </a>
 
             {/* Mobile Toggle */}
@@ -107,14 +107,14 @@ function App() {
         
         <Container className="relative z-10 text-center text-white pt-20">
           <div className="inline-block border-y border-cs-accent/50 py-2 mb-8 backdrop-blur-sm px-6">
-            <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-cs-accent font-bold">Fraccionamiento Residencial</p>
+            <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-cs-accent font-bold">Terrenos Residenciales</p>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight drop-shadow-2xl">
             Tu refugio en el <br/>
             <span className="text-white">corazón de Pátzcuaro</span>
           </h1>
           <p className="max-w-xl mx-auto text-lg text-gray-200 mb-12 font-light leading-relaxed drop-shadow-lg">
-            Donde la arquitectura tradicional se funde con el bosque templado.
+            Diseñado para vivir o invertir en un entorno natural único.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="#concepto" className="bg-cs-accent text-white px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-cs-dark transition-all shadow-lg hover:shadow-cs-accent/50">
@@ -127,21 +127,22 @@ function App() {
       {/* --- STATS STRIP --- */}
       <div className="bg-cs-primary py-12 border-b border-cs-secondary/20 relative z-20 -mt-20 mx-4 md:mx-12 lg:mx-24 shadow-2xl rounded-sm">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-cs-secondary/30">
-          <div className="p-2">
+          <div className="p-12">
             <span className="block text-4xl md:text-5xl font-serif text-white mb-2">118</span>
             <span className="text-xs uppercase tracking-widest text-cs-accent font-bold">Lotes Exclusivos</span>
           </div>
-          <div className="p-2">
-            <span className="block text-4xl md:text-5xl font-serif text-white mb-2">70%</span>
-            <span className="text-xs uppercase tracking-widest text-cs-accent font-bold">Áreas Verdes</span>
+          <div className="p-16">
+            <span className="block text-3xl md:text-4xl font-serif text-white mb-2">Áreas Verdes</span>
           </div>
-          <div className="p-2">
+          <div className="p-12">
             <span className="block text-4xl md:text-5xl font-serif text-white mb-2">100%</span>
             <span className="text-xs uppercase tracking-widest text-cs-accent font-bold">Urbanizado</span>
           </div>
           <div className="p-2">
-            <span className="block text-4xl md:text-5xl font-serif text-white mb-2">400</span>
-            <span className="text-xs uppercase tracking-widest text-cs-accent font-bold">m² Superficie Máx</span>
+            <span className="text-xs uppercase tracking-widest text-cs-accent font-bold">Desde</span>
+            <span className="block text-4xl md:text-5xl font-serif text-white mb-2">126 m²</span>
+            <span className="text-xs uppercase tracking-widest text-cs-accent font-bold">hasta </span>
+            <span className="block text-4xl md:text-5xl font-serif text-white mb-2">400 m²</span>
           </div>
         </div>
       </div>
@@ -153,14 +154,14 @@ function App() {
             <div>
               <span className="text-cs-accent font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Filosofía</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-cs-dark mb-8 leading-tight">
-                Naturaleza y Tradición <br/>en Armonía
+                Naturaleza y Privacidad <br/>en Equilibrio
               </h2>
               <div className="space-y-6 text-cs-dark/80 leading-relaxed text-lg">
                 <p>
                   <strong className="text-cs-primary">Tzintzuni Arboledas</strong> nace del respeto por el entorno. Cada lote ha sido cuidadosamente planificado para maximizar la privacidad y preservar los pinos centenarios.
                 </p>
                 <p>
-                  Fusionamos el lujo de la arquitectura contemporánea con la serenidad del bosque, creando un santuario de baja densidad.
+                  Espacios diseñados para construir con libertad, rodeados de bosque con el equilibrio perfecto entre tranquilidad y conexión con Pátzcuaro.
                 </p>
               </div>
               <div className="mt-12 grid grid-cols-2 gap-6">
