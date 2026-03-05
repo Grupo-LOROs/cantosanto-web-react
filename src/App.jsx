@@ -107,7 +107,7 @@ function App() {
         
         <Container className="relative z-10 text-center text-white pt-20">
           <div className="inline-block border-y border-cs-accent/50 py-2 mb-8 backdrop-blur-sm px-6">
-            <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-cs-accent font-bold">Terrenos Residenciales</p>
+            <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-white/80 font-bold">Terrenos Residenciales</p>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight drop-shadow-2xl">
             Tu refugio en el <br/>
@@ -152,16 +152,16 @@ function App() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <span className="text-cs-accent font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Filosofía</span>
+              <span className="text-cs-accent font-bold tracking-[0.2em] uppercase text-xs mb-4 block">La escencia del proyecto</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-cs-dark mb-8 leading-tight">
-                Naturaleza y Privacidad <br/>en Equilibrio
+                Zona con proyección <br/>de plusvalía
               </h2>
               <div className="space-y-6 text-cs-dark/80 leading-relaxed text-lg">
                 <p>
-                  <strong className="text-cs-primary">Tzintzuni Arboledas</strong> nace del respeto por el entorno. Cada lote ha sido cuidadosamente planificado para maximizar la privacidad y preservar los pinos centenarios.
+                  <strong className="text-cs-primary">Tzintzuni Arboledas</strong> nace de su ubicación privilegiada dentro de Pátzcuaro. Cada lote ha sido cuidadosamente planificado para ofrecer espacios amplios, privacidad y un entorno residencial bien integrado.
                 </p>
                 <p>
-                  Espacios diseñados para construir con libertad, rodeados de bosque con el equilibrio perfecto entre tranquilidad y conexión con Pátzcuaro.
+                  Espacios diseñados para construir con libertad, combinando tranquilidad y cercanía con el centro de Pátzcuaro.
                 </p>
               </div>
               <div className="mt-12 grid grid-cols-2 gap-6">
@@ -172,8 +172,7 @@ function App() {
                 </div>
                 <div className="bg-white p-6 shadow-sm border-l-4 border-cs-accent">
                   <TreePine className="text-cs-secondary mb-4" size={24} />
-                  <h4 className="font-bold text-cs-primary uppercase tracking-wider text-sm mb-2">Entorno</h4>
-                  <p className="text-sm text-gray-500">Rodeado de bosque templado y aire puro.</p>
+                  <p className="text-sm text-gray-500">Un entorno residencial dentro de Pátzcuaro que combina tranquilidad, tradición y cercanía con la vida cultural de la ciudad.</p>
                 </div>
               </div>
             </div>
@@ -183,7 +182,7 @@ function App() {
                 <img src={aerialImage} alt="Vista aérea" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 grayscale-[20%]" />
               </div>
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-cs-dark p-8 hidden md:flex flex-col justify-center text-white z-10 shadow-xl border border-white/5">
-                 <span className="text-3xl font-serif italic text-cs-accent">"Un legado natural"</span>
+                 <span className="text-2xl font-serif text-white">Espacios para construir con libertad</span>
               </div>
             </div>
           </div>
@@ -197,7 +196,7 @@ function App() {
             <span className="text-cs-accent font-bold tracking-[0.2em] uppercase text-xs">Detalles Técnicos</span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4 mb-8 text-white">Arquitectura Sensitiva</h2>
             <p className="text-cs-beige/70 text-lg">
-              Lineamientos estrictos para minimizar el impacto visual y fusionar las construcciones con el paisaje del bosque.
+              Lineamientos arquitectónicos que garantizan una estética ordenada y una integración respetuosa con la arquitectura tradicional de Pátzcuaro.
             </p>
           </div>
 
@@ -219,21 +218,18 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/5 border border-white/10 p-8 hover:border-cs-accent/50 transition-colors">
               <Layers className="text-cs-accent mb-4" size={32} />
-              <h3 className="text-xl font-serif mb-2 text-white">Integración Visual</h3>
-              <p className="text-white/60 text-sm mb-4">Piedra Volcánica, Madera Natural y Teja.</p>
-              <span className="text-xs text-cs-accent uppercase tracking-widest font-bold">Reglamento Vigente</span>
+              <h3 className="text-xl font-serif mb-2 text-white">Integración Arquitectónica</h3>
+              <p className="text-white/60 text-sm mb-4">Materiales como piedra volcánica, madera y teja que evocan la arquitectura tradicional de Pátzcuaro.</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-8 hover:border-cs-accent/50 transition-colors">
               <EyeOff className="text-cs-accent mb-4" size={32} />
-              <h3 className="text-xl font-serif mb-2 text-white">Cero Impacto</h3>
-              <p className="text-white/60 text-sm mb-4">Instalaciones subterráneas y equipos ocultos.</p>
-              <span className="text-xs text-cs-accent uppercase tracking-widest font-bold">Vistas Limpias</span>
+              <h3 className="text-xl font-serif mb-2 text-white">Infraestructura Oculta</h3>
+              <p className="text-white/60 text-sm mb-4">Instalaciones subterráneas y equipos discretamente integrados para mantener una imagen urbana limpia.</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-8 hover:border-cs-accent/50 transition-colors">
               <Lightbulb className="text-cs-accent mb-4" size={32} />
-              <h3 className="text-xl font-serif mb-2 text-white">Cielos Oscuros</h3>
-              <p className="text-white/60 text-sm mb-4">Iluminación cálida dirigida al suelo.</p>
-              <span className="text-xs text-cs-accent uppercase tracking-widest font-bold">Protección Fauna</span>
+              <h3 className="text-xl font-serif mb-2 text-white">Iluminación Responsable</h3>
+              <p className="text-white/60 text-sm mb-4">Iluminación cálida dirigida al suelo que reduce la contaminaci</p>
             </div>
           </div>
         </Container>
@@ -315,6 +311,13 @@ function App() {
             alt="Mapa Pátzcuaro" 
             className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-1000 opacity-90" 
           />
+          <div className="absolute top-8 left-1/2 -translate-x-1/2 z-10 px-4">
+            <div className="inline-block border-y border-white/40 backdrop-blur-sm bg-cs-dark/20 px-5 py-2">
+              <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-white/90 font-bold text-center">
+                Ubicado dentro de Pátzcuaro,<br></br> con acceso inmediato a servicios,<br></br> cultura y naturaleza.
+              </p>
+            </div>
+          </div>
           <div className="absolute bottom-10 left-10 bg-white text-cs-dark p-8 shadow-2xl max-w-xs border-l-4 border-cs-accent">
             <h4 className="font-bold font-serif text-xl mb-1">Zona de Alta Plusvalía</h4>
             <p className="text-xs text-gray-500 uppercase tracking-wider mb-4 font-bold">Inversión Pública 191 MDP</p>
@@ -332,18 +335,26 @@ function App() {
           <div className="space-y-8">
             <div className="group">
               <div className="flex justify-between items-baseline mb-2 border-b border-white/20 pb-2">
-                <h3 className="text-xl font-bold group-hover:text-cs-accent transition-colors">Isla Janitzio</h3>
-                <span className="text-cs-accent font-mono font-bold">18 MIN</span>
+                <h3 className="text-xl font-bold group-hover:text-cs-accent transition-colors">Centro de Pátzcuaro</h3>
+                <span className="text-cs-accent font-mono font-bold">8 MIN</span>
               </div>
-              <p className="text-sm text-white/50">Destino turístico internacional.</p>
+              <p className="text-sm text-white/50">Vida cultural, gastronomía y comercio.</p>
             </div>
-            
+
             <div className="group">
               <div className="flex justify-between items-baseline mb-2 border-b border-white/20 pb-2">
                 <h3 className="text-xl font-bold group-hover:text-cs-accent transition-colors">Tzurumutaro</h3>
                 <span className="text-cs-accent font-mono font-bold">15 MIN</span>
               </div>
               <p className="text-sm text-white/50">Conexión rápida a servicios.</p>
+            </div>
+
+            <div className="group">
+              <div className="flex justify-between items-baseline mb-2 border-b border-white/20 pb-2">
+                <h3 className="text-xl font-bold group-hover:text-cs-accent transition-colors">Isla Janitzio</h3>
+                <span className="text-cs-accent font-mono font-bold">18 MIN</span>
+              </div>
+              <p className="text-sm text-white/50">Destino turístico internacional.</p>
             </div>
             
             <div className="group">
@@ -363,7 +374,7 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-20 items-start mb-24">
             <div>
               <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8 leading-none">
-                Empieza tu nueva <br/> <span className="text-cs-accent">vida en el bosque.</span>
+                Empieza tu nueva vida <br/> <span className="text-cs-accent">en el corazón de Pátzcuaro</span>
               </h2>
               <p className="text-gray-400 text-lg mb-8 max-w-md">
                 Agenda una visita hoy mismo y descubre por qué Tzintzuni Arboledas es el legado que tu familia merece.
